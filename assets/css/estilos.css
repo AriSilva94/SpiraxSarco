@@ -68,6 +68,10 @@ header {
 	cursor: pointer;
 }
 
+.logout{
+	cursor: pointer;
+}
+
 .box {
 	transition-duration: 0.2s;
 }
