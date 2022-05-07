@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/estilos.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" type="image/x-icon" href="assets/img/Spirax-Sarco.ico">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-custom">
+			<div class="container">
+				<div class="navbar-header h-100">
+					<div class="d-flex flex-center m-auto" onclick="handlePageHome()">
+						<h1>
+							<img class="navbar-brand logo"
+								src="https://dev.spiraxdigital.com/wp-content/themes/yootheme/cache/spirax-sarco-logo-site-2159eb76.webp"
+								alt="Logo Spirax Sarco">
+						</h1>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="d-flex flex-space-around col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<img src="https://dev.spiraxdigital.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+								alt="">
+							<img src="https://dev.spiraxdigital.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-br.png"
+								alt="">
+						</div>
+						<div class="d-flex flex-space-around col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<i class="fa-brands fa-youtube color-white "></i>
+							<i class="fa-brands fa-linkedin-in color-white "></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="d-flex-direction d-flex flex-space-around p-8 color-white">
+					<ul class="nav navbar-nav">
+						<li>
+							<p>User: Vendedor da Silva</p>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<li>
+							<p>Company: SPIRAX SARCO</p>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+						<div class="dropdown">
+							<p>Selecionar Empresa:</p>
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Selecione CNPJ
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu bg-color-white" aria-labelledby="dropdownMenu1">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container pt-8">
+		<div class="row">
+			<section id="depoimentos" class="carousel-main">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<figure class="item active">
+							<img src="assets/img/carousel1.png" alt="Depoimento 1">
+							<figcaption class="carousel-caption">
+								<h3>Yuri Padilha</h3>
+								<p>Gostei muito e achei rápido o serviço.</p>
+							</figcaption>
+						</figure>
+						<figure class="item">
+							<img src="assets/img/carousel2.png" alt="Depoimento 2">
+							<figcaption class="carousel-caption">
+								<h3>Fernando Stafaneni</h3>
+								<p>Excelente trabalho.</p>
+							</figcaption>
+						</figure>
+						<figure class="item">
+							<img src="assets/img/carousel3.png" alt="Depoimento 3">
+							<figcaption class="carousel-caption">
+								<h3>Caio Sauzas</h3>
+								<p>Gostei, competência em primeiro lugar.</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="container d-flex flex-center m-auto pt-8">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box">
+				<figure class="thumbnail card" onclick="handlePageDocumentation()">
+					<img src="assets/img/Documentation.png" alt="Documentação">
+					<figcaption class="caption">
+						<h3>Documentação</h3>
+						<p>Manuais, Certificados, Folhas de Dados e outros documentos de sua base instalada</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box">
+				<figure class="thumbnail card" onclick="handlePageTracking()">
+					<img src="assets/img/Tracking.png" alt="Tracking">
+					<figcaption class="caption">
+						<h3>Tracking</h3>
+						<p>Acompanhamento de seus Pedidos em Andamento</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box">
+				<figure class="thumbnail card" onclick="handlePageFinance()">
+					<img src="assets/img/Finance.png" alt="Financeiro">
+					<figcaption class="caption">
+						<h3>Financeiro</h3>
+						<p>Controle de Posição Financeira em aberto</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box">
+				<figure class="thumbnail card">
+					<img src="assets/img/library.png" alt="Biblioteca">
+					<figcaption class="caption">
+						<h3>Biblioteca</h3>
+						<p>Desenhos e especificações de nossos produtos (CAD)</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box">
+				<figure class="thumbnail card">
+					<img src="assets/img/Services.png" alt="Serviços">
+					<figcaption class="caption">
+						<h3>Serviços</h3>
+						<p>Inventário de produtos instalados e histórico de inspeções</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box">
+				<figure class="thumbnail card">
+					<img src="assets/img/Ecommerce.png" alt="E-commerce">
+					<figcaption class="caption">
+						<h3>E-Commerce</h3>
+						<p>Portal de compras diretas para produtos com lista de preço predefinida</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<address>
+				<img src="https://dev.spiraxdigital.com/wp-content/themes/yootheme/cache/spirax-sarco-logo-site-2159eb76.webp"
+					alt="Logo Spirax Sarco">
+				<p class="pt-8">&copy;&nbsp;<span id="ano">2021</span> Spirax Sarco Limited. All Rights Reserved.</p>
+			</address>
+			<address>
+				<p>Rua Vergueiro, 3185, Vila Mariana</p>
+				<p>São Paulo, SP</p>
+				<p>Tel: (11) 5571-2751 ou 5083-3884</p>
+			</address>
+			<address>
+				E-mail: contato.topcasafina@alura.com.br
+			</address>
+			<button class="display" onclick="topFunction()" id="myBtn" title="Ir para cima"><i
+					class="fa-solid fa-arrow-up"></i></button>
+		</div>
+	</footer>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/index.js"></script>
+</body>
+
+</html>
